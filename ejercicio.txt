@@ -25,3 +25,18 @@ Velocidad Medida.
 Multa.
 
 
+public static void generarArchivo(String s) {
+        String idTicket = java.util.UUID.randomUUID().toString();
+        File ticket = new File("c:\\clase5\\tickets\\" + idTicket);
+        
+        try {
+            java.io.FileWriter escritorArchivo = new java.io.FileWriter(ticket);
+            escritorArchivo.write(s);
+            escritorArchivo.flush();
+            escritorArchivo.close();
+        }
+        catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+    
