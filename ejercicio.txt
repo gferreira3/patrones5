@@ -1,0 +1,27 @@
+Administracion de tickets de multa.
+
+Dado un sensor de volocidad, que va arrojando informacion sobre los vehiculos que transitan por una determinada
+autovia.
+
+Se debe:
+
+Segun los limites de velocidad establecidos.
+Generar un tiket de multa en formato json.
+
+con algunas restricciones:
+
+Si la velocidad maxima para el tipo de vehiculo exede hasta el 10% de la velocidad.
+Se debe emitir una multa por 1000 $. 
+
+Si la velocidad maxima para el tipo de vehiculo exede para mas de el 10% de la velocidad.
+Se debe emitir una multa por 5000 $. 
+
+Los tickets se deberan almacenar en archivos con la siguiente informacion
+
+Patente, 
+Tipo Vehiculo
+Velocidad Maxima
+Velocidad Medida.
+Multa.
+
+
